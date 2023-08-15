@@ -132,3 +132,25 @@ shape: (10, 2)
 Your custom check start_station_name IS NULL found 978 records that match your filter statement
 Your custom check end_station_name IS NULL found 978 records that match your filter statement
 ```
+
+## Contributing
+
+Tiny Timmy depends on Python 3.9.
+
+To use poetry to install the dependencies from the `pyproject.toml`, as well as Tiny Timmy in editable mode, run:
+
+```bash
+poetry install
+```
+
+Then, enable the `pre-commit` git hooks:
+
+```bash
+pre-commit install
+```
+
+Finally, ensure your setup is up and running by running the unit tests:
+
+```bash
+pytest tests
+```
